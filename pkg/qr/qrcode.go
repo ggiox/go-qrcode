@@ -60,8 +60,8 @@ import (
 	"log"
 	"os"
 
-	bitset "github.com/ggiox/pkg/go-qrcode/bitset"
-	reedsolomon "github.com/ggiox/pkg/go-qrcode/reedsolomon"
+	bitset "github.com/ggiox/go-qrcode/pkg/qr/bitset"
+	reedsolomon "github.com/ggiox/go-qrcode/pkg/qr/reedsolomon"
 )
 
 // Encode a QR Code and return a raw PNG image.

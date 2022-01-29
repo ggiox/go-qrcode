@@ -1,3 +1,3 @@
-module github.com/ggiox/pkg/go-qrcode.git
+module github.com/ggiox/go-qrcode/pkg/qr.git
 
 go 1.17
