@@ -13,7 +13,7 @@ package reedsolomon
 import (
 	"log"
 
-	bitset "github.com/ggiox/go-qrcode/pkg/qr/bitset"
+	bitset "github.com/ggiox/go-qrcode/pkg/qrcode/bitset"
 )
 
 // Encode data for QR Code 2005 using the appropriate Reed-Solomon code.

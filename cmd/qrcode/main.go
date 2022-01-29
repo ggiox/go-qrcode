@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	qrcode "github.com/ggiox/go-qrcode/pkg/qr"
+	qrcode "github.com/ggiox/go-qrcode/pkg/qrcode"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 	disableBorder := flag.Bool("d", false, "disable QR Code border")
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, `qrcode -- QR Code encoder in Go
-https://github.com/ggiox/go-qrcode/pkg/qr
+https://github.com/ggiox/go-qrcode
 
 Flags:
 `)
@@ -35,7 +35,7 @@ Usage:
 
   2. Save to file if "display" not available:
 
-       qrcode "homepage: https://github.com/ggiox/go-qrcode/pkg/qr" > out.png
+       qrcode "homepage: https://github.com/ggiox/go-qrcode/" > out.png
 
 `)
 	}
