@@ -20,7 +20,6 @@ func main() {
 	disableBorder := flag.Bool("d", false, "disable QR Code border")
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, `qrcode -- QR Code encoder in Go
-https://github.com/ggiox/go-qrcode
 
 Flags:
 `)
@@ -35,7 +34,7 @@ Usage:
 
   2. Save to file if "display" not available:
 
-       qrcode "homepage: https://github.com/ggiox/go-qrcode/" > out.png
+       qrcode "homepage: https://go.dev" > out.png
 
 `)
 	}
@@ -43,7 +42,8 @@ Usage:
 
 	if len(flag.Args()) == 0 {
 		flag.Usage()
-		checkError(fmt.Errorf("qrcode: usage error: no content given"))
+		//checkError(fmt.Errorf("qrcode: usage error: no content given"))
+		os.Exit(0)
 	}
 
 	content := strings.Join(flag.Args(), " ")
