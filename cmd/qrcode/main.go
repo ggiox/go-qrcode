@@ -43,7 +43,7 @@ Usage:
 
 	if len(flag.Args()) == 0 {
 		flag.Usage()
-		checkError(fmt.Errorf("Error: no content given"))
+		checkError(fmt.Errorf("qrcode: usage error: no content given"))
 	}
 
 	content := strings.Join(flag.Args(), " ")
