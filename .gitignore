@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+build/
 
 # Test binary, built with `go test -c`
 *.test
@@ -16,3 +17,6 @@
 
 # Visual Studio Code
 .vscode
+
+# Output of qrcode image
+*.png
