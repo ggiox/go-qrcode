@@ -19,7 +19,8 @@ func main() {
 	negative := flag.Bool("i", false, "invert black and white")
 	disableBorder := flag.Bool("d", false, "disable QR Code border")
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, `qrcode -- QR Code encoder in Go
+		fmt.Fprintf(os.Stderr, `
+qrcode -- QR Code encoder in Go
 
 Flags:
 `)
